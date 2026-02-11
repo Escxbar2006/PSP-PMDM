@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">JugandoDados</string>
+    <string name="saldo_label">Saldo:</string>
+    <string name="haga_su_apuesta">Haga su apuesta</string>
+    <string name="lanzar_dados">Lanzar los dados</string>
+    <string name="par_impar">Par/Impar</string>
+    <string name="mayor_menor_7">Mayor/Menor que 7</string>
+    <string name="apuesta_invalida">Apuesta inválida</string>
+    <string name="seleccione_opcion">Seleccione una opción</string>
+    <string name="has_ganado">¡Has ganado!</string>
+    <string name="has_perdido">Has perdido...</string>
+    <string name="bancarrota">¡BANCARROTA!</string>
+    <string name="continuar_jugando">¿Desea seguir jugando?</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="partida_terminada">La partida ha terminado</string>
+</resources>
