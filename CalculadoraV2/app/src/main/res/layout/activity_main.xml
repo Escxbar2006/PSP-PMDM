@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="24sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="12x65=" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHistory"
+        tools:text="780" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:constraint_referenced_ids="btn7,btn8,btn9,btnMult,btn4,btn5,btn6,btnSub,btn1,btn2,btn3,btnAdd"
+        app:flow_horizontalGap="8dp"
+        app:flow_maxElementsWrap="4"
+        app:flow_verticalGap="8dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowZeroDiv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:constraint_referenced_ids="btn0,btnDiv"
+        app:flow_maxElementsWrap="2"
+        app:flow_wrapMode="aligned"
+        app:flow_horizontalGap="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flowButtons"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowClearEquals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:constraint_referenced_ids="btnClear,btnEquals"
+        app:flow_maxElementsWrap="2"
+        app:flow_wrapMode="aligned"
+        app:flow_horizontalGap="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flowZeroDiv" />
+
+    <Button android:id="@+id/btn7" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="7" />
+    <Button android:id="@+id/btn8" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="8" />
+    <Button android:id="@+id/btn9" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="9" />
+    <Button android:id="@+id/btnMult" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="*" />
+
+    <Button android:id="@+id/btn4" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="4" />
+    <Button android:id="@+id/btn5" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="5" />
+    <Button android:id="@+id/btn6" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="6" />
+    <Button android:id="@+id/btnSub" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="-" />
+
+    <Button android:id="@+id/btn1" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="1" />
+    <Button android:id="@+id/btn2" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="2" />
+    <Button android:id="@+id/btn3" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="3" />
+    <Button android:id="@+id/btnAdd" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="+" />
+
+    <Button android:id="@+id/btn0" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="0" />
+    <Button android:id="@+id/btnDiv" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="/" />
+
+    <Button android:id="@+id/btnClear" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Clear" />
+    <Button android:id="@+id/btnEquals" style="@style/Widget.Material3.Button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="=" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
