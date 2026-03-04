@@ -1,3 +1,8 @@
 package com.example.reciclerview
 
-data class Color(val name: String, val hexCode: String)
+data class Color(
+    val id: Long,
+    val name: String, 
+    val hexCode: String,
+    var isInverted: Boolean = false
+)
