@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MiTiendaPabloEscobar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores de marca: Piano Black & Vintage Gold -->
+        <item name="colorPrimary">@color/black_piano</item>
+        <item name="colorOnPrimary">@color/gold_vintage</item>
+        <item name="colorPrimaryContainer">@color/gray_dark</item>
+        <item name="colorOnPrimaryContainer">@color/gold_vintage</item>
+
+        <item name="colorSecondary">@color/gold_vintage</item>
+        <item name="colorOnSecondary">@color/black_piano</item>
+        
+        <item name="colorSurface">@color/white_cream</item>
+        <item name="colorOnSurface">@color/black_piano</item>
+        
+        <item name="android:windowBackground">@color/white_cream</item>
+        <item name="android:statusBarColor">@color/black_piano</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedImageView" parent="">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="EscobarToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextColor">@color/gold_vintage</item>
+        <item name="subtitleTextColor">@color/white_cream</item>
+    </style>
+</resources>
